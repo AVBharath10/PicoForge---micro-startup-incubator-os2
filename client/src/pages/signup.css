@@ -260,10 +260,10 @@
     text-decoration: underline;
 }
 
-/* Responsive Design */
 @media (max-width: 480px) {
     .signup-card {
         padding: 24px 20px;
+        max-width: 100%;
     }
 
     .signup-title {
@@ -276,5 +276,31 @@
 
     .form-input {
         padding: 10px 14px;
+    }
+
+    .submit-button {
+        width: 100%;
+    }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+    .signup-card {
+        max-width: 90%;
+        padding: 32px 24px;
+    }
+
+    .signup-title {
+        font-size: 30px;
+    }
+
+    .submit-button {
+        width: 100%;
+    }
+}
+
+@media (min-width: 1440px) {
+    .signup-card {
+        max-width: 500px;
     }
 }
